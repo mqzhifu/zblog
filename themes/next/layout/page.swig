@@ -43,6 +43,7 @@
                 end_color  : theme.tagcloud.end})
               }}
             </div>
+{% include 'tag-color.swig' %}
           </div>
         {% elif page.type === 'categories' %}
           <div class="category-all-page">
@@ -75,3 +76,5 @@
 {% block sidebar %}
   {{ sidebar_template.render(true) }}
 {% endblock %}
+
+
